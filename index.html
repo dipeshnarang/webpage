@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Login #7</title>
+      
+    <style>
+        .container{
+            align-content: center;
+            text-align: center
+        }
+        .btn{
+            margin-top: 30px;
+            margin-bottom: 60px
+        }
+        .btn-lg{
+            width: 370px
+        }
+        .dropdown-menu {
+    width: 370px !important;
+
+}
+      
+    </style>
+  </head>
+  <body>
+  
+
+  
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/undraw_remotely_2j6y.svg" alt="Image" class="img-fluid">
+        </div>
+        <div class="col-md-6 contents">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="mb-4">
+              <h3>Choose Server Location</h3>
+              
+            </div>
+            <form action="#" method="post">
+              
+              <div class="btn-group">
+                  <button id="locationDropDown" class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select Location
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">US </a>
+                    <a class="dropdown-item" href="#">Singapore</a>
+                  </div>
+                </div>
+                
+                
+              
+              <input type="submit" value="Next" class="btn btn-lg  btn-primary">
+
+<!--                            <input type="submit" value="Next" class="btn btn-lg btn-block btn-primary">-->
+
+              
+             
+            </form>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        var elements = document.getElementsByClassName('dropdown-item');
+
+        Array.from(elements).forEach((element) => {
+            element.addEventListener('click', (event) => {
+                event.preventDefault()
+                document.querySelector('#locationDropDown').textContent=event.target.innerText
+                console.log(` ${event.target.innerText}!`);
+            });
+        });
+      
+    </script>
+  </body>
+</html>
